@@ -17,14 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-Xt-mgb">
-                                <rect key="frame" x="172" y="712" width="70" height="70"/>
+                                <rect key="frame" x="172" y="742" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="AXl-hi-Mv3"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="boM-pr-bwm"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="dcL-ZL-f8a"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="jqb-Ve-wZ2"/>
                                     <constraint firstAttribute="width" constant="70" id="pYQ-Dw-cwP"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="r9e-dW-a9Y"/>
                                     <constraint firstAttribute="height" constant="70" id="s97-wn-HFs"/>
                                 </constraints>
                                 <state key="normal" image="すすむ.png">
@@ -37,27 +32,11 @@
                                     <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LdB-Do-eJz"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="drt-6z-gQe">
-                                <rect key="frame" x="77" y="174" width="260" height="302"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="AXy-Wg-k36"/>
-                                    <constraint firstAttribute="height" constant="302" id="XRS-x6-Abr"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="302" id="XcY-9W-UkG"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="8HT-W4-Quc" appends="YES" id="twN-Wr-Mvq"/>
-                                </connections>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-FZ-6at">
-                                <rect key="frame" x="50" y="712" width="70" height="70"/>
+                                <rect key="frame" x="50" y="742" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="5o1-Te-bFn"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="IkR-MJ-40i"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="KHw-n4-LoZ"/>
                                     <constraint firstAttribute="height" constant="70" id="KTK-JX-VOn"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="p7K-vQ-lEG"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="wYR-BI-UPv"/>
                                 </constraints>
                                 <state key="normal" image="もどる.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5L-xE-H3N">
-                                <rect key="frame" x="294" y="712" width="70" height="70"/>
+                                <rect key="frame" x="294" y="742" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="JQe-lC-mFh"/>
                                     <constraint firstAttribute="height" constant="70" id="nU7-sS-0Mo"/>
@@ -84,20 +63,31 @@
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IvZ-0S-6Hp"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="drt-6z-gQe">
+                                <rect key="frame" x="72" y="102" width="270" height="347"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="347" id="AqH-xe-kfP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8HT-W4-Quc" appends="YES" id="twN-Wr-Mvq"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="drt-6z-gQe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="10h-HQ-zMv"/>
                             <constraint firstItem="tcO-Xt-mgb" firstAttribute="height" secondItem="arX-FZ-6at" secondAttribute="height" id="61V-uu-Br2"/>
-                            <constraint firstItem="drt-6z-gQe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Th-fl-DTT"/>
+                            <constraint firstItem="arX-FZ-6at" firstAttribute="top" secondItem="g5L-xE-H3N" secondAttribute="top" id="61h-Vy-3FX"/>
                             <constraint firstItem="arX-FZ-6at" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Efh-eG-rvl"/>
                             <constraint firstItem="tcO-Xt-mgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L8s-a4-30H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g5L-xE-H3N" secondAttribute="bottom" constant="80" id="Smb-D3-W6p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="arX-FZ-6at" secondAttribute="bottom" constant="80" id="TjU-xp-5tR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tcO-Xt-mgb" secondAttribute="bottom" constant="80" id="eQD-fz-Oo8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="drt-6z-gQe" secondAttribute="trailing" constant="72" id="PJe-IW-jlt"/>
+                            <constraint firstItem="drt-6z-gQe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="Swm-tF-gk3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tcO-Xt-mgb" secondAttribute="bottom" constant="50" id="eQD-fz-Oo8"/>
                             <constraint firstItem="g5L-xE-H3N" firstAttribute="height" secondItem="arX-FZ-6at" secondAttribute="height" id="hnI-IW-s2u"/>
+                            <constraint firstItem="arX-FZ-6at" firstAttribute="top" secondItem="tcO-Xt-mgb" secondAttribute="top" id="jrr-Ze-2eq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g5L-xE-H3N" secondAttribute="trailing" constant="50" id="s3T-TR-7xH"/>
+                            <constraint firstItem="drt-6z-gQe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="uBd-wd-Ov7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -115,7 +105,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-165.21739130434784" y="93.75"/>
+            <point key="canvasLocation" x="-165.59999999999999" y="93.103448275862078"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="61Q-32-AWN">

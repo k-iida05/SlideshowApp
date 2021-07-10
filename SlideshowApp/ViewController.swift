@@ -17,11 +17,11 @@ class ViewController: UIViewController {
     
     var timer:Timer!
     var imageArray:[UIImage] = [
-        UIImage(named: "1.png")!,
-        UIImage(named: "2.png")!,
-        UIImage(named: "3.png")!,
-        UIImage(named: "4.png")!,
-        UIImage(named: "5.png")!
+        UIImage(named: "1.jpg")!,
+        UIImage(named: "2.jpg")!,
+        UIImage(named: "3.jpg")!,
+        UIImage(named: "4.jpg")!,
+        UIImage(named: "5.jpg")!
     ]
     let buttonImage = UIImage(named: "再生.png")
     let buttonImage2 = UIImage(named: "停止.png")
