@@ -115,9 +115,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSh-ML-qDA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSh-ML-qDA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htY-s0-Wc3">
                                 <rect key="frame" x="157" y="706" width="100" height="100"/>
@@ -136,8 +135,12 @@
                         <viewLayoutGuide key="safeArea" id="Wag-e5-yq3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eSh-ML-qDA" firstAttribute="trailing" secondItem="Wag-e5-yq3" secondAttribute="trailing" id="5Fu-KF-Epq"/>
                             <constraint firstItem="Wag-e5-yq3" firstAttribute="bottom" secondItem="htY-s0-Wc3" secondAttribute="bottom" constant="56" id="Dgs-vU-fSH"/>
                             <constraint firstItem="htY-s0-Wc3" firstAttribute="centerX" secondItem="nyX-FW-BeW" secondAttribute="centerX" id="Fzh-yv-ayz"/>
+                            <constraint firstAttribute="bottom" secondItem="eSh-ML-qDA" secondAttribute="bottom" id="RZB-qs-7ZG"/>
+                            <constraint firstItem="eSh-ML-qDA" firstAttribute="leading" secondItem="Wag-e5-yq3" secondAttribute="leading" id="hyg-5g-hRp"/>
+                            <constraint firstItem="eSh-ML-qDA" firstAttribute="top" secondItem="nyX-FW-BeW" secondAttribute="top" id="zIt-Oh-mpc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="85Z-e6-gTh"/>

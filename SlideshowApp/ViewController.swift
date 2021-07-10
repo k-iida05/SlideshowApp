@@ -71,10 +71,16 @@ class ViewController: UIViewController {
         if segue.identifier == "toNext"{
             let NextVC : NextViewController = segue.destination as! NextViewController
             NextVC.selectImg = imageView.image
+            
+            timer.invalidate()
+            startButton.setImage(buttonImage, for: .normal)
+            backButton.isEnabled = true
+            goButton.isEnabled = true
         }
     }
     @IBAction func tap(_ sender: Any) {
         performSegue(withIdentifier: "toNext", sender: nil)
+       
     }
     
 }
