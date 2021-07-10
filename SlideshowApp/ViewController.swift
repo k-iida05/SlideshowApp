@@ -73,6 +73,7 @@ class ViewController: UIViewController {
             NextVC.selectImg = imageView.image
             
             timer.invalidate()
+            timer = nil
             startButton.setImage(buttonImage, for: .normal)
             backButton.isEnabled = true
             goButton.isEnabled = true
